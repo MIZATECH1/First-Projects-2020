@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h1>Change Bag Inventory: </h1>
+
+<form action="/change_bag_response" method="post">
+    <label>Enter Bag Name: </label>
+    <input type="text" name="bag_name" id="bag_name" placeholder="Bag name here."><br/>
+    <label>Add/Sub bag bag inventory: </label>
+    <input type="text" name="operation" id="operation" placeholder="+/-"><br/>
+    <label>Quantity: </label>
+    <input type="number" name="quantity" id="quantity" placeholder="some number"><br/><br/>
+    <input type="submit">
+</form>
+<a href="/home">Home</a>
+{% endblock %}

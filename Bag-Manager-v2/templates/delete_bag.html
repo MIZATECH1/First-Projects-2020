@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h1>Delete a bag: </h1>
+<form action="/delete_bag"  method="post">
+    <label>Enter bag name: </label>
+    <input type="text" placeholder="bag name here" name="bag_del" id="bag_del"><br/><br/>
+    <input type="submit">
+</form>
+
+<a href="/home">Home</a>
+
+{% endblock %}

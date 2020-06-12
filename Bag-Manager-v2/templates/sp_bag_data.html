@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+<h1>Specific Bag data: </h1>
+<form action="/sp_bag_response"  method="post">
+    <label>Enter bag name: </label>
+    <input type="text" placeholder="bag name here" name="bag_name" id="bag_name"><br/><br/>
+    <input type="submit">
+</form>
+
+<a href="/home">Home</a>
+
+{% endblock%}

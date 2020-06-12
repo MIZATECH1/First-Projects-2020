@@ -1,0 +1,6 @@
+columns  in record  are as follow:
+
+    name text,
+    quantity text,
+    status text,
+    date text

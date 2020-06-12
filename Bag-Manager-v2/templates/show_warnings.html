@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h1>Show warnings: </h1>
+<form action="/warning_result"  method="post">
+    <label>Enter Min quantity: </label>
+    <input type="text" placeholder="Quantity here" name="min_quantity" id="min_quantity"><br/><br/>
+    <input type="submit">
+</form>
+
+<a href="/home">Home</a>
+
+{% endblock%}
